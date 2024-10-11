@@ -2,47 +2,44 @@
 
 ## Data
 
-The data I propose to visualize for my project is ...
+The data I propose to visualize for my project is [Olympic Sports and Medals 1896-2014](https://www.kaggle.com/datasets/the-guardian/olympic-games)
+
 
 
 ## Questions & Tasks
 
 The following tasks and questions will drive the visualization and interaction decisions for this project:
 
- * (insert your question or task here) How does the X vary over time?
- * (insert your question or task here) Is there any correlation between X and Y?
- * (insert your question or task here) Are there interesting spatial patterns in X?
- * (insert your question or task here) How many X are there across different Y?
+ * Do host countries of the Olympic Games experience an economic boost, and does that correlate with their performance in the Games?
+ * How does a country's GDP or economic size correlate with the number of Olympic medals won?
+ * Which countries have won the most gold medals over time?
+ * What is the geographic distribution of Olympic medals in the Summer and Winter Games?
 
 ## Sketches
 
-(insert one or more hand-drawn sketches of interactive visualizations that you imagine)
-(describe each sketch - how is the data visualized, what are the interactions, and how do these relate to the questions/tasks)
+
+![Frame](https://github.com/user-attachments/assets/53084871-9e1a-48ae-ba7f-733c15c51409)
+A pie chart illustrating the share of gold medals won by various countries, with countries like the USA and USSR leading the chart.
+![Slide 16_9 - 4](https://github.com/user-attachments/assets/73d613dd-9f9f-40a6-9370-94e5ba1e33b3)
+A bar chart depicting the number of medals won in various sports such as swimming, boxing, and cycling
+![Sports (1)](https://github.com/user-attachments/assets/c5419f43-5a40-43b1-ba08-7b51b2d7da6e)
+A line graph showing the trend of Olympic medals won by a specific country (likely the USA) over the years, combined with a world map.
+![Sports](https://github.com/user-attachments/assets/90b11696-b804-451c-b951-c8075bc3cd66)
+A bar chart displaying the number of basketball medals won by different countries, including the USA, USSR, and Yugoslavia.
 
 
 ## Prototypes
 
-I’ve created a proof of concept visualization of this data. It's a ... and it shows ...
-
-[![image](https://user-images.githubusercontent.com/68416/65240758-9ef6c980-daff-11e9-9ffa-e35fc62683d2.png)](https://vizhub.com/curran/eab039ad1765433cb51aad167d9deae4)
-
-(please put a screenshot of one or more visualizations of this dataset you already made, for previous assignments, and link to them)
-
-You can put images into here by pasting them into issues.
-
-You can make images into links like this:
-
-```
-[![image](https://user-images.githubusercontent.com/68416/65240758-9ef6c980-daff-11e9-9ffa-e35fc62683d2.png)](https://vizhub.com/curran/eab039ad1765433cb51aad167d9deae4)
-```
+![Home Page](https://github.com/user-attachments/assets/c1a5df01-4426-4144-bacb-e50b706d793a)
+This will be the Home Page. It's a proof of concept home page of a world map showing the distribution of Olympic medals by country, differentiated by size and highlighting summer and winter games.
 
 
-Also, you can study the [source](https://raw.githubusercontent.com/curran/dataviz-project-template-proposal/master/README.md) to figure out Markdown formatting. You can use the GitHub built-in editor to edit the document.
 
 ## Open Questions
 
-(describe any fear, uncertainty, or doubt you’re having about the feasibility of implementing the sketched system. For example, “I’m not sure where to get the geographic shapes to build a map from this data” or “I don’t know how to resolve the codes to meaningful names” … Feel free to delete this section if you’re confident.)
+
+I have some uncertainty about the feasibility of implementing the sketched system. One concern is sourcing geographic shape files, like shapefiles or GeoJSON, for accurate medal distribution maps. Additionally, resolving country codes to meaningful names, especially for outdated or former countries, could be challenging. Integrating economic data like GDP or sports spending is also a concern, as finding reliable data and merging it with the Olympic dataset might be difficult.
 
 ## Milestones
 
-(for each week, estimate what would be accomplised)
+Work in Progress
