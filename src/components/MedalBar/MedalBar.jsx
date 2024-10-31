@@ -1,4 +1,4 @@
-// components/Navbar.js
+// components/MedalBar.js
 import React from 'react';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
@@ -9,7 +9,7 @@ import goldMedal from '../../assets/gold_medal.png';
 import silverMedal from '../../assets/silver_medal.png';
 import bronzeMedal from '../../assets/bronze_medal.png';
 
-const Navbar = ({activeMedal, onMedalClick}) => {
+const MedalBar = ({activeMedal, onMedalClick}) => {
     return (
         <Toolbar sx={{justifyContent: 'space-between', width: '55%'}}>
             <Box>
@@ -75,4 +75,4 @@ const Navbar = ({activeMedal, onMedalClick}) => {
         ;
 };
 
-export default Navbar;
+export default MedalBar;

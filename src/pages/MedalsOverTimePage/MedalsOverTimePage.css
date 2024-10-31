@@ -1,0 +1,15 @@
+.map-container {
+    flex-direction: column;
+    flex: 1;
+    align-self: center;
+}
+.container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.line-chart-container {
+    height: 600px;
+    width: 200px;
+}

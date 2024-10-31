@@ -1,4 +1,4 @@
-export const Winter = [
+export const WinterData = [
     {
         "Year": 1924,
         "City": "Chamonix",
