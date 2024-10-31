@@ -1,4 +1,4 @@
-export const Countries = [
+export const CountryData = [
     {
         "Country": "Afghanistan",
         "Code": "AFG",
