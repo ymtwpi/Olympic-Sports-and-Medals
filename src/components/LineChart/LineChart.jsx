@@ -1,34 +1,47 @@
 import React, { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
 
-const LineChart = ({ data, country }) => {
+const LineChart = ({ data, country, medalType }) => {
     const svgRef = useRef();
     const width = 800;
     const height = 400;
-    const margin = { top: 20, right: 30, bottom: 40, left: 50 };
-
-    console.log(country);
+    const margin = { top: 20, right: 30, bottom: 50, left: 60 };
 
     useEffect(() => {
         if (!data || data.length === 0) return;
 
+        const medalTypes = ['Gold', 'Silver', 'Bronze'];
         const filteredData = country ? data.filter(d => d.Country === country) : data;
 
-        const yearMedals = d3.rollups(
-            filteredData,
-            v => v.length,
-            d => d.Year
-        ).map(([year, count]) => ({ year: +year, count }));
+        const yearMedals = medalTypes.map(type => ({
+            medalType: type,
+            values: d3.rollups(
+                filteredData.filter(d => d.Medal === type),
+                v => v.length,
+                d => d.Year
+            ).map(([year, count]) => ({ year: +year, count }))
+        }));
 
-        yearMedals.sort((a, b) => a.year - b.year);
+        yearMedals.forEach(medalData => {
+            medalData.values.sort((a, b) => a.year - b.year);
+        });
+
+        const allYears = data.map(d => +d.Year);
+        const globalYearExtent = d3.extent(allYears);
 
         const xScale = d3.scaleLinear()
-            .domain(d3.extent(yearMedals, d => d.year))
+            .domain(globalYearExtent)
             .range([margin.left, width - margin.right]);
 
         const yScale = d3.scaleLinear()
-            .domain([0, d3.max(yearMedals, d => d.count)])
+            .domain([0, d3.max(yearMedals, medalData => d3.max(medalData.values, d => d.count))])
             .range([height - margin.bottom, margin.top]);
+
+        const colorMap = {
+            Gold: '#FFD700',
+            Silver: '#C0C0C0',
+            Bronze: '#cd7f32'
+        };
 
         const xAxis = g => g
             .attr("transform", `translate(0,${height - margin.bottom})`)
@@ -48,25 +61,45 @@ const LineChart = ({ data, country }) => {
         svg.append("g").call(xAxis);
         svg.append("g").call(yAxis);
 
-        svg.append("path")
-            .datum(yearMedals)
-            .attr("fill", "none")
-            .attr("stroke", "steelblue")
-            .attr("stroke-width", 2)
-            .attr("d", d3.line()
-                .x(d => xScale(d.year))
-                .y(d => yScale(d.count))
-            );
+        yearMedals.forEach(medalData => {
+            svg.append("path")
+                .datum(medalData.values)
+                .attr("fill", "none")
+                .attr("stroke", colorMap[medalData.medalType])
+                .attr("stroke-width", 2)
+                .attr("opacity", medalType === null || medalData.medalType === medalType ? 1 : 0.3)
+                .attr("d", d3.line()
+                    .x(d => xScale(d.year))
+                    .y(d => yScale(d.count))
+                );
+        });
 
-        svg.selectAll(".circle")
-            .data(yearMedals)
-            .enter()
-            .append("circle")
-            .attr("cx", d => xScale(d.year))
-            .attr("cy", d => yScale(d.count))
-            .attr("r", 3)
-            .attr("fill", "steelblue");
-    }, [data, country]);
+        yearMedals.forEach(medalData => {
+            svg.selectAll(`.circle-${medalData.medalType}`)
+                .data(medalData.values)
+                .enter()
+                .append("circle")
+                .attr("cx", d => xScale(d.year))
+                .attr("cy", d => yScale(d.count))
+                .attr("r", 3)
+                .attr("fill", colorMap[medalData.medalType])
+                .attr("opacity", medalType === null || medalData.medalType === medalType ? 1 : 0.3);
+        });
+
+        svg.append("text")
+            .attr("x", width / 2)
+            .attr("y", height - 10)
+            .attr("text-anchor", "middle")
+            .text("Years");
+
+        svg.append("text")
+            .attr("x", -(height / 2))
+            .attr("y", 20)
+            .attr("text-anchor", "middle")
+            .attr("transform", "rotate(-90)")
+            .text("Medals");
+
+    }, [data, country, medalType]);
 
     return <svg ref={svgRef}></svg>;
 };
