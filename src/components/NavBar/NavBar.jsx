@@ -12,6 +12,7 @@ const NavBar = () => {
                 <Box sx={{ display: 'flex', gap: 2 }}>
                     <Button color="inherit" component={Link} to="/">HeatMap</Button>
                     <Button color="inherit" component={Link} to="/medalsOverTime">Medals Over Time</Button>
+                    <Button color="inherit" component={Link} to="/medalsPieChart">Pie Chart</Button>
                 </Box>
             </Toolbar>
         </AppBar>
