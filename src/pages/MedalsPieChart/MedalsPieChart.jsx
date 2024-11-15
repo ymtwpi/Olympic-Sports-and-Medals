@@ -3,10 +3,10 @@ import './MedalsPieChart.css'
 import BottomNavbar from "../../components/BottomNavbar/BottomNavbar.jsx";
 import MedalBar from "../../components/MedalBar/MedalBar.jsx";
 import PieChart from "../../components/PieChart/PieChart.jsx";
+import Legend from "../../components/Legend/Legend.jsx";
 import {SummerData} from '../../data/Summer.js';
 import {WinterData} from "../../data/Winter.js";
 import * as d3 from 'd3';
-import Legend from "../../components/Legend/Legend.jsx";
 
 const MedalsPieChart = () => {
     const [season, setSeason] = useState('summer');
