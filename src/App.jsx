@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage/HomePage.jsx";
 import MedalsOverTimePage from "./pages/MedalsOverTimePage/MedalsOverTimePage.jsx";
 import './App.css';
 import MedalsPieChart from "./pages/MedalsPieChart/MedalsPieChart.jsx";
+import CountrySportsMedals from "./pages/CountrySportsMedals/CountrySportsMedals.jsx";
 function App() {
     return (
         <Router>
@@ -13,6 +14,7 @@ function App() {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/medalsOverTime" element={<MedalsOverTimePage />} />
                 <Route path="/medalsPieChart" element={<MedalsPieChart />} />
+                <Route path="/countrySportsMedals" element={<CountrySportsMedals />} />
             </Routes>
         </Router>
     )
