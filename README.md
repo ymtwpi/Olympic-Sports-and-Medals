@@ -42,7 +42,51 @@ I have some uncertainty about the feasibility of implementing the sketched syste
 
 ## Milestones
 
-## Website Link
-https://incomparable-salmiakki-49a475.netlify.app/medalsOverTime
+#### Week 1
 
-Work in Progress
+- Set up the initial project structure and integrated the Summer Olympics dataset as a JSON array.
+
+- Built the foundation for the Home Page, including a world map visualization using D3.js to display the geographic distribution of Olympic medals.
+
+- Added functionality to toggle between Summer and Winter Games on the Home Page.
+
+#### Week 2
+
+- Created a Material-UI dropdown picker for country selection, dynamically populated with country data.
+
+- Developed a bar chart using D3.js to display the number of medals won by a selected country across different sports.
+
+- Integrated the dropdown with the bar chart, ensuring dynamic updates based on the selected country.
+
+- Ensured the dropdown defaults to "United States" on initial load.
+
+#### Week 3
+
+- Implemented a pie chart visualization to show the share of gold medals won by top countries.
+
+- Styled the pie chart with dynamic color scales based on the selected medal type (gold, silver, or bronze).
+
+- Added interactivity with tooltips displaying medal counts and country names on hover.
+
+- Created a dynamic legend component for the pie chart to match the visualization.
+
+#### Week 4
+
+- Developed a line chart to show the trend of medals won by a selected country over time.
+
+- Integrated the line chart with the country selection dropdown, ensuring synchronization with other visualizations.
+
+- Styled axes and labels for readability and ensured responsiveness.
+
+- Enhanced the interactivity of the bar chart and pie chart with hover effects.
+
+#### Week 5
+
+- Updated the world map to act as a country picker by allowing users to click on countries to update visualizations.
+
+- Improved the tooltip functionality for the world map to display country names and medal counts on hover.
+
+- Refined the color scales for better clarity across all visualizations.
+
+## Website Link
+https://incomparable-salmiakki-49a475.netlify.app
