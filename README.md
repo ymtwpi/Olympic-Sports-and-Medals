@@ -50,17 +50,10 @@ I have some uncertainty about the feasibility of implementing the sketched syste
 
 - Added functionality to toggle between Summer and Winter Games on the Home Page.
 
+<img width="1512" alt="Screenshot 2024-11-28 at 6 21 42 PM" src="https://github.com/user-attachments/assets/c34ac372-b79c-4a3f-b8d8-87fc7b144f5a">
+
+
 #### Week 2
-
-- Created a Material-UI dropdown picker for country selection, dynamically populated with country data.
-
-- Developed a bar chart using D3.js to display the number of medals won by a selected country across different sports.
-
-- Integrated the dropdown with the bar chart, ensuring dynamic updates based on the selected country.
-
-- Ensured the dropdown defaults to "United States" on initial load.
-
-#### Week 3
 
 - Implemented a pie chart visualization to show the share of gold medals won by top countries.
 
@@ -70,7 +63,9 @@ I have some uncertainty about the feasibility of implementing the sketched syste
 
 - Created a dynamic legend component for the pie chart to match the visualization.
 
-#### Week 4
+<img width="1508" alt="Screenshot 2024-11-28 at 6 23 05 PM" src="https://github.com/user-attachments/assets/115457bb-7ac5-4acc-bac5-cb44c77864f3">
+
+#### Week 3
 
 - Developed a line chart to show the trend of medals won by a selected country over time.
 
@@ -80,13 +75,20 @@ I have some uncertainty about the feasibility of implementing the sketched syste
 
 - Enhanced the interactivity of the bar chart and pie chart with hover effects.
 
-#### Week 5
+<img width="1506" alt="Screenshot 2024-11-28 at 6 22 45 PM" src="https://github.com/user-attachments/assets/9046b0ff-83a8-43ed-b420-079927924c49">
 
-- Updated the world map to act as a country picker by allowing users to click on countries to update visualizations.
+#### Week 4
 
-- Improved the tooltip functionality for the world map to display country names and medal counts on hover.
+- Created a Material-UI dropdown picker for country selection, dynamically populated with country data.
 
-- Refined the color scales for better clarity across all visualizations.
+- Developed a bar chart using D3.js to display the number of medals won by a selected country across different sports.
+
+- Integrated the dropdown with the bar chart, ensuring dynamic updates based on the selected country.
+
+- Ensured the dropdown defaults to "United States" on initial load.
+  
+<img width="1511" alt="Screenshot 2024-11-28 at 6 23 17 PM" src="https://github.com/user-attachments/assets/cc6dd990-3886-49f4-9f4b-d708407f63d7">
+
 
 ## Website Link
 https://incomparable-salmiakki-49a475.netlify.app
