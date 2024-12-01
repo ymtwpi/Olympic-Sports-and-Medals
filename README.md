@@ -61,8 +61,6 @@ I have some uncertainty about the feasibility of implementing the sketched syste
 
 - Styled axes and labels for readability and ensured responsiveness.
 
-- Enhanced the interactivity of the pie chart with hover effects.
-
   
   ![Screenshot 2024-12-01 at 3 44 01 PM](https://github.com/user-attachments/assets/cba78e94-79ad-4db9-a8c1-469aa8877e57)
 
