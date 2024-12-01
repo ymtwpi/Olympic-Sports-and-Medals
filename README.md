@@ -73,11 +73,22 @@ I have some uncertainty about the feasibility of implementing the sketched syste
 
 - Styled axes and labels for readability and ensured responsiveness.
 
-- Enhanced the interactivity of the bar chart and pie chart with hover effects.
+- Enhanced the interactivity of the pie chart with hover effects.
 
 <img width="1506" alt="Screenshot 2024-11-28 at 6 22 45 PM" src="https://github.com/user-attachments/assets/9046b0ff-83a8-43ed-b420-079927924c49">
 
 #### Week 4
+
+- Broke the line chart into 3 different categories - Gold, Silver and Bronze
+  
+- Created a vertical medal selection component for the line chart with 3 respective icons
+
+- Added an interaction to the vertical medal selectors component that highlights the gold, silver and bronze medal respectively.
+
+
+<img width="1506" alt="Screenshot 2024-11-28 at 6 22 45 PM" src="https://github.com/user-attachments/assets/9046b0ff-83a8-43ed-b420-079927924c49">
+
+#### Week 5
 
 - Created a Material-UI dropdown picker for country selection, dynamically populated with country data.
 
