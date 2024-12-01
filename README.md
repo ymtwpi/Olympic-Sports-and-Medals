@@ -53,7 +53,21 @@ I have some uncertainty about the feasibility of implementing the sketched syste
 <img width="1512" alt="Screenshot 2024-11-28 at 6 21 42 PM" src="https://github.com/user-attachments/assets/c34ac372-b79c-4a3f-b8d8-87fc7b144f5a">
 
 
-#### Week 2
+#### Week 3
+
+- Developed a line chart to show the trend of medals won by a selected country over time.
+
+- Integrated the line chart with the country selection dropdown, ensuring synchronization with other visualizations.
+
+- Styled axes and labels for readability and ensured responsiveness.
+
+- Enhanced the interactivity of the pie chart with hover effects.
+
+  
+  ![Screenshot 2024-12-01 at 3 44 01 PM](https://github.com/user-attachments/assets/cba78e94-79ad-4db9-a8c1-469aa8877e57)
+
+
+#### Week 3
 
 - Implemented a pie chart visualization to show the share of gold medals won by top countries.
 
@@ -65,17 +79,6 @@ I have some uncertainty about the feasibility of implementing the sketched syste
 
 <img width="1508" alt="Screenshot 2024-11-28 at 6 23 05 PM" src="https://github.com/user-attachments/assets/115457bb-7ac5-4acc-bac5-cb44c77864f3">
 
-#### Week 3
-
-- Developed a line chart to show the trend of medals won by a selected country over time.
-
-- Integrated the line chart with the country selection dropdown, ensuring synchronization with other visualizations.
-
-- Styled axes and labels for readability and ensured responsiveness.
-
-- Enhanced the interactivity of the pie chart with hover effects.
-
-<img width="1506" alt="Screenshot 2024-11-28 at 6 22 45 PM" src="https://github.com/user-attachments/assets/9046b0ff-83a8-43ed-b420-079927924c49">
 
 #### Week 4
 
