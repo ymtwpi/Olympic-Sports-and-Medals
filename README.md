@@ -102,5 +102,17 @@ I have some uncertainty about the feasibility of implementing the sketched syste
 <img width="1511" alt="Screenshot 2024-11-28 at 6 23 17 PM" src="https://github.com/user-attachments/assets/cc6dd990-3886-49f4-9f4b-d708407f63d7">
 
 
+#### Week 6
+
+- Created a Material-UI dropdown picker for sports selection, dynamically populated with the Summer and Winter data.
+
+- Developed a bar chart using D3.js to display the number of medals won by different countries in the selected sport.
+
+- Integrated the dropdown with the bar chart, ensuring dynamic updates based on the selected country.
+
+- Ensured the dropdown defaults to "Aquatics" on initial load.
+
+<img width="1469" alt="Screenshot 2024-12-06 at 5 42 31 PM" src="https://github.com/user-attachments/assets/385b7950-58f1-4cf8-9583-196e26cebd13">
+
 ## Website Link
 https://incomparable-salmiakki-49a475.netlify.app
