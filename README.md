@@ -42,7 +42,65 @@ I have some uncertainty about the feasibility of implementing the sketched syste
 
 ## Milestones
 
-## Website Link
-https://incomparable-salmiakki-49a475.netlify.app/medalsOverTime
+#### Week 1
 
-Work in Progress
+- Set up the initial project structure and integrated the Summer Olympics dataset as a JSON array.
+
+- Built the foundation for the Home Page, including a world map visualization using D3.js to display the geographic distribution of Olympic medals.
+
+- Added functionality to toggle between Summer and Winter Games on the Home Page.
+
+<img width="1512" alt="Screenshot 2024-11-28 at 6 21 42 PM" src="https://github.com/user-attachments/assets/c34ac372-b79c-4a3f-b8d8-87fc7b144f5a">
+
+
+#### Week 3
+
+- Developed a line chart to show the trend of medals won by a selected country over time.
+
+- Integrated the line chart with the country selection dropdown, ensuring synchronization with other visualizations.
+
+- Styled axes and labels for readability and ensured responsiveness.
+
+  
+  ![Screenshot 2024-12-01 at 3 44 01 PM](https://github.com/user-attachments/assets/cba78e94-79ad-4db9-a8c1-469aa8877e57)
+
+
+#### Week 3
+
+- Implemented a pie chart visualization to show the share of gold medals won by top countries.
+
+- Styled the pie chart with dynamic color scales based on the selected medal type (gold, silver, or bronze).
+
+- Added interactivity with tooltips displaying medal counts and country names on hover.
+
+- Created a dynamic legend component for the pie chart to match the visualization.
+
+<img width="1508" alt="Screenshot 2024-11-28 at 6 23 05 PM" src="https://github.com/user-attachments/assets/115457bb-7ac5-4acc-bac5-cb44c77864f3">
+
+
+#### Week 4
+
+- Broke the line chart into 3 different categories - Gold, Silver and Bronze
+  
+- Created a vertical medal selection component for the line chart with 3 respective icons
+
+- Added an interaction to the vertical medal selectors component that highlights the gold, silver and bronze medal respectively.
+
+
+<img width="1506" alt="Screenshot 2024-11-28 at 6 22 45 PM" src="https://github.com/user-attachments/assets/9046b0ff-83a8-43ed-b420-079927924c49">
+
+#### Week 5
+
+- Created a Material-UI dropdown picker for country selection, dynamically populated with country data.
+
+- Developed a bar chart using D3.js to display the number of medals won by a selected country across different sports.
+
+- Integrated the dropdown with the bar chart, ensuring dynamic updates based on the selected country.
+
+- Ensured the dropdown defaults to "United States" on initial load.
+  
+<img width="1511" alt="Screenshot 2024-11-28 at 6 23 17 PM" src="https://github.com/user-attachments/assets/cc6dd990-3886-49f4-9f4b-d708407f63d7">
+
+
+## Website Link
+https://incomparable-salmiakki-49a475.netlify.app
