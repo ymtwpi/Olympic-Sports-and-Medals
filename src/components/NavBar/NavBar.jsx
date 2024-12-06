@@ -14,6 +14,7 @@ const NavBar = () => {
                     <Button color="inherit" component={Link} to="/medalsOverTime">Medals Over Time</Button>
                     <Button color="inherit" component={Link} to="/medalsPieChart">Pie Chart</Button>
                     <Button color="inherit" component={Link} to="/countrySportsMedals">Medals by Sport</Button>
+                    <Button color="inherit" component={Link} to="/sportsByCountries">Sports by Countries</Button>
                 </Box>
             </Toolbar>
         </AppBar>

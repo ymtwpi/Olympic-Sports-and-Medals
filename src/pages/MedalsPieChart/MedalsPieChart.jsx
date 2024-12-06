@@ -6,6 +6,8 @@ import PieChart from "../../components/PieChart/PieChart.jsx";
 import {SummerData} from '../../data/Summer.js';
 import {WinterData} from "../../data/Winter.js";
 import * as d3 from 'd3';
+import Legend from "../../components/Legend/Legend.jsx";
+
 
 const MedalsPieChart = () => {
     const [season, setSeason] = useState('summer');
@@ -44,6 +46,7 @@ const MedalsPieChart = () => {
             <div className={'pie-legend-container'}>
                 <PieChart data={filteredData} activeMedal={activeMedal}/>
                 <div className={'legend'}>
+                    <Legend data={filteredData} colorScale={colorScale}/>
                 </div>
             </div>
             <h4> Share of {activeMedal.charAt(0).toUpperCase() + activeMedal.slice(1)} Medals </h4>

@@ -1,0 +1,11 @@
+.sports-by-country-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sports-selector-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-self: center;
+}
